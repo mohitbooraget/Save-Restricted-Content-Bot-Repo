@@ -31,7 +31,7 @@ ids = []
     await event.client.send_message(event.chat_id, msg) 
 '''
 
-@gagan.on(events.NewMessage(incoming=True, pattern='/mendax'))
+@gagan.on(events.NewMessage(incoming=True, pattern='/batch'))
 async def _batch(event):
     s = False
     if f'{event.sender_id}' in batch:
@@ -166,7 +166,7 @@ async def start_command(event):
     buttons = [
         [Button.inline("Cancel", data="cancel"),
          Button.inline("Cancel", data="cancel")],
-        [Button.url("Join Channel", url="https://telegram.dog/dev_gagan")]
+        [Button.url("Join Channel", url="https://t.me/+O3Uchyl0gSxhZWI9")]
     ]
 
     # Sending photo with caption and buttons
