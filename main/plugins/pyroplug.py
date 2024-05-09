@@ -74,7 +74,7 @@ async def send_video_with_chat_id(client, sender, path, caption, duration, hi, w
             progress=progress_for_pyrogram,
             progress_args=(
                 client,
-                '**__Uploading: [Team SPY](https://t.me/dev_gagan)__**\n ',
+                '**__Uploading: [Team 𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)__**\n ',
                 upm,
                 time.time()
             )
@@ -215,7 +215,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                 progress=progress_for_pyrogram,
                 progress_args=(
                     client,
-                    "**__Downloading__: __[S](https://t.me/+O3Uchyl0gSxhZWI9)__**\n ",
+                    "**__Downloading__: __[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)__**\n ",
                     edit,
                     time.time()
                 )
@@ -256,7 +256,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     logging.info(e)
                     thumb_path = None
                 
-                caption = f"{msg.caption}\n\n__Downloaded by **[S](https://t.me/+O3Uchyl0gSxhZWI9)**__" if msg.caption else "__Downloaded by **[S](https://t.me/+O3Uchyl0gSxhZWI9)**__"
+                caption = f"{msg.caption}\n\n__Downloaded by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)**__" if msg.caption else "__Downloaded by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)**__"
                 await send_video_with_chat_id(client, sender, path, caption, duration, hi, wi, thumb_path, upm)
             elif str(file).split(".")[-1] in ['jpg', 'jpeg', 'png', 'webp']:
                 if file_n != '':
@@ -270,7 +270,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     file = path
 
                 
-                caption = f"{msg.caption}\n\n__Unrestricted by **[S](https://t.me/+O3Uchyl0gSxhZWI9)**__" if msg.caption else "__Unrestricted by **[S](https://t.me/+O3Uchyl0gSxhZWI9)**__"
+                caption = f"{msg.caption}\n\n__Unrestricted by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)**__" if msg.caption else "__Unrestricted by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)**__"
                 await upm.edit("__Uploading photo...__")
 
                 await bot.send_file(sender, path, caption=caption)
@@ -286,7 +286,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     file = path
                 thumb_path=thumbnail(sender)
                 
-                caption = f"{msg.caption}\n\n__Downloaded by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/iMendaxPublic)**__" if msg.caption else "__Downloaded by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/iMendaxPublic)**__"
+                caption = f"{msg.caption}\n\n__Downloaded by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)**__" if msg.caption else "__Downloaded by **[𝐌𝐞𝐧𝐝𝐚𝐱™❤️](https://t.me/mendaxFree)**__"
                 await send_document_with_chat_id(client, sender, path, caption, thumb_path, upm)
             os.remove(file)
             await upm.delete()
