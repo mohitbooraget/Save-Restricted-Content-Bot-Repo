@@ -4,7 +4,7 @@ from telethon import events, Button
 from telethon.tl.types import InputMediaPhoto
 
 S = "/start"
-START_PIC = "https://graph.org/file/f4d4a6e3ed00365fed281.jpg"
+START_PIC = "https://graph.org/file/03671b239ca182446a64a.jpg"
 TEXT = "Send me the Link of any message of Restricted Channels to Clone it here.\nFor private channel's messages, send the Invite Link first.\n\n👉🏻Execute /mendax for bulk process upto 10K files range."
 
 def is_set_button(data):
@@ -52,7 +52,7 @@ async def start_command(event):
     buttons = [
         [Button.inline("SET THUMB", data="set"),
          Button.inline("REM THUMB", data="rem")],
-        [Button.url("Join Channel", url="https://t.me/iMendaxPublic")]
+        [Button.url("Join Channel", url="https://t.me/+O3Uchyl0gSxhZWI9")]
     ]
 
     # Sending photo with caption and buttons
