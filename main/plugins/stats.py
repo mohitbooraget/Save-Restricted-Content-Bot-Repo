@@ -56,7 +56,7 @@ async def stats(event):
             f'Memory Total: {mem_t}\n'\
             f'Memory Free: {mem_a}\n'\
             f'Memory Used: {mem_u}\n'\
-            f'Powered by **__[Mendax](https://t.me/iMendaxPublic)__**\n'
+            f'Powered by **__[..](https://t.me/+O3Uchyl0gSxhZWI9)__**\n'
     
     await event.reply(f"{stats}")
    #duz.edit(stats)
