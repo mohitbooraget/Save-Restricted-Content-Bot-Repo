@@ -31,11 +31,11 @@ ids = []
     await event.client.send_message(event.chat_id, msg) 
 '''
 
-@gagan.on(events.NewMessage(incoming=True, pattern='/batch'))
+@gagan.on(events.NewMessage(incoming=True, pattern='/mendax'))
 async def _batch(event):
     s = False
     if f'{event.sender_id}' in batch:
-        return await event.reply("You've already started one batch, wait for it to complete you dumbfuck owner!")
+        return await event.reply("You've already started one batch, wait for it to complete you dumbfuck!")
     async with gagan.conversation(event.chat_id) as conv: 
         if not s:
             await conv.send_message(f"Send me the message link you want to start saving from, as a reply to this message.", buttons=Button.force_reply())
@@ -122,7 +122,7 @@ async def run_batch(userbot, client, sender, countdown, link):
             await get_bulk_msg(userbot, client, sender, link, integer)
             protection = await client.send_message(sender, f"Sleeping for `{timer}` seconds to avoid Floodwaits and Protect account!")
             await countdown.edit(count_down, 
-                                 buttons=[[Button.url("Join Channel", url="https://t.me/iMendaxPublic")]])
+                                 buttons=[[Button.url("Join Channel", url="https://t.me/MendaxFree")]])
             await asyncio.sleep(timer)
             await protection.delete()
         except IndexError as ie:
@@ -157,7 +157,7 @@ async def run_batch(userbot, client, sender, countdown, link):
             return -2
 
 C = "/cancel"
-START_PIC = "https://graph.org/file/f4d4a6e3ed00365fed281.jpg"
+START_PIC = "https://graph.org/file/91172b269a8af4982616d.jpg"
 TEXT = "👋 Hi, This is 'Paid Restricted Content Saver' bot Made with ❤️ by __**𝐌𝐞𝐧𝐝𝐚𝐱™❤️**__."
 
 @gagan.on(events.NewMessage(pattern=f"^{C}"))
@@ -166,7 +166,7 @@ async def start_command(event):
     buttons = [
         [Button.inline("Cancel", data="cancel"),
          Button.inline("Cancel", data="cancel")],
-        [Button.url("Join Channel", url="https://t.me/+O3Uchyl0gSxhZWI9")]
+        [Button.url("Join Channel", url="https://t.me/mendaxfree")]
     ]
 
     # Sending photo with caption and buttons
