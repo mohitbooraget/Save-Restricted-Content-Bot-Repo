@@ -50,8 +50,8 @@ async def remt(event):
 async def start_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.inline("SET THUMB", data="set"),
-         Button.inline("REM THUMB", data="rem")],
+        [Button.inline("⚡SET THUMB⚡", data="set"),
+         Button.inline("🪄REMOVE🪄", data="rem")],
         [Button.url("Join Channel", url="https://t.me/mendaxFree")]
     ]
 
